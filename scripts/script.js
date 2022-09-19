@@ -18,8 +18,11 @@ $(document).ready(function () {
 
     $("#coolNameFactsOutput").html(nameLength(userName));
 
-    $("#coolNameFactsOutput").html(getSpiritAnimal(userName));
-    console.log("Your spirit animal is ", getSpiritAnimal(userBirthMonth));
+    $("#userBirthMonth").click(function () {
+      $("#coolNameFactsOutput").html(getSpiritAnimal(userName));
+      let userMonth = $(this).attr("value");
+      alert(getSpiritAnimal(userMonth));
+    });
 
     // $("#coolNameFactsOutput").html(
     //   '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1">'
@@ -31,11 +34,7 @@ $(document).ready(function () {
     // );
   });
 
-  $("#userBirthMonth").click(function () {
-    let userMonth = $(this).attr("value");
-    getSpiritAnimal(userBirthMonth);
-    console.log("Your spirit animal is ", getSpiritAnimal(userBirthMonth));
-  });
+ 
 });
 
 function generateCoolNameFacts(userName) {
@@ -77,11 +76,11 @@ function reverseName(name) {
   revName = arrName.reverse();
 }
 
-function getSpiritAnimal(userBirthMonth) {
+function getSpiritAnimal(userMonth) {
   //flow control: case switch, loop, if/the
   let spiritAnimal = "nothing";
 
-  switch(userBirthMonth){
+  switch(userMonth){
     case "January":
       spiritAnimal = "Dire Wolf";
       break;
