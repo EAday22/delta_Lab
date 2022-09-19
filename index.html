@@ -1,117 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
-    <meta charset="UTF-8" />
-    <title>elijah-lab-delta</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8">
+    <title>CodePen - Doge_Game Elijah Aday cis376</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./style.css">
   </head>
-  <body class="container-fluid">
+  <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">eli's fun name facts</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+        <a class="navbar-brand" href="#">Elijah Aday</a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              href="https://github.com/EAday22/doge_game2.0">see the code!</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/barrycumbie/turbo-guacamole/">See the Code!</a>
-          </li> 
-          </ul>
-        </div>
+        </ul> 
       </div>
     </nav>
+    <!-- title bar-->
+    <div class="row">
+      <h1>Welcome Wandering Wower to the Wonderous World of WOW</h1>
+    </div>
 
+    <!--game instructions-->
+    <div class="row">
+      <h3>Pick a Doge, any Doge... but beware and best of luck :)</h3>
+    </div>
 
-      <!-- this is my github link card -->
-      <!-- <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">GitHub Link Demo</h4>
-            <p class="card-text">
-              Here is a guide on how to link to your REPO (Source Code) & your
-              APP (Deployment)
-            </p>
-
-            <a
-              href="https://github.com/barrycumbie/effective-enigma"
-              class="card-link"
-              target="affiliate"
-              >View the REPO</a
-            >
-
-            <a
-              href="https://barrycumbie.github.io/effective-enigma/"
-              target="affiliate"
-              class="card-link"
-              >View the APP</a
-            >
-          </div>
-        </div>
-      </div> -->
-
-      <!-- this is my name game card -->
-      <div class="col-sm-8 offset-sm-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Cool Name Facts</h4>
-            <p class="card-text">Provide me with your name for some cool facts!</p>
-
-            <label for="userName" class="form-label">What is your name?</label>
-            <input
-              type="text"
-              id="userName"
-              class="form-control"
-              name="userName"
-            />
-            <button id="btnGetFacts" class="btn btn-secondary">
-              get cool facts
-            </button>
-
-            <button id="userBirthMonth" value="January">January</button>
-            <button id="userBirthMonth" value="February">February</button>
-            <button id="userBirthMonth" value="March">March</button>
-            <button id="userBirthMonth" value="April">April</button>
-            <button id="userBirthMonth" value="May">May</button>
-            <button id="userBirthMonth" value="June">June</button>
-            <button id="userBirthMonth" value="July">July</button>
-            <button id="userBirthMonth" value="August">August</button>
-            <button id="userBirthMonth" value="September">September</button>
-            <button id="userBirthMonth" value="October">October</button>
-            <button id="userBirthMonth" value="November">November</button>
-            <button id="userBirthMonth" value="December">December</button>
-
-            <span id="coolNameFactsOutput"> </span>
-            <img id="coolNameImg" />
-            <!-- <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a> -->
-          </div>
-        </div>
+    <!--output div-->
+    <div id="outputDiv" class="row">
+      <div class="col-md-4 offset-md-4">
+        <h1 id="outputMsg">OUTPUT MESSAGE</h1>
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="./scripts/script.js"></script>
+    <div class="row">
+      <div class="card col-md-5 offset-md-1">
+        <div class="card-body">
+          <h4 class="card-title">doge coin</h4>
+          <img id="dogeOne" class="card-img-top" src="https://images.unsplash.com/photo-1621739165914-7155e5d4816e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjI1MDczNzc&ixlib=rb-1.2.1&q=80" alt="">
+        </div>
+      </div>
+  
+      <div class="card col-md-5">
+        <div class="card-body">
+          <h4 class="card-title">doge meme</h4>
+          <img id="dogeTwo" class="img-fluid" src="https://getwallpapers.com/wallpaper/full/a/3/3/9625.jpg" alt="doge meme">
+        </div>  
+      </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
   </body>
 </html>
