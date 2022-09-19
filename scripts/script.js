@@ -18,7 +18,8 @@ $(document).ready(function () {
 
     $("#coolNameFactsOutput").html(nameLength(userName));
 
-    // $("#coolNameFactsOutput").html(getSpiritAnimal(userName));
+    $("#coolNameFactsOutput").html(getSpiritAnimal(userName));
+    console.log("Your spirit animal is ", getSpiritAnimal(userBirthMonth));
 
     // $("#coolNameFactsOutput").html(
     //   '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1">'
@@ -28,6 +29,12 @@ $(document).ready(function () {
     //   "src",
     //   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1"
     // );
+  });
+
+  $("#userBirthMonth").click(function () {
+    let userMonth = $(this).attr("value");
+    getSpiritAnimal(userBirthMonth);
+    console.log("Your spirit animal is ", getSpiritAnimal(userBirthMonth));
   });
 });
 
@@ -70,15 +77,57 @@ function reverseName(name) {
   revName = arrName.reverse();
 }
 
-function getSpiritAnimal(x) {
-  //flow control: case switch, loop, if/then
+function getSpiritAnimal(userBirthMonth) {
+  //flow control: case switch, loop, if/the
+  let spiritAnimal = "nothing";
 
-  if (x.length == 3) {
-    //execute some code
-    return "you are slug!";
-  } else if (x.length > 10) {
-    return "u spirit animal is iguana";
-  } else {
-    return "u are nothing.";
+  switch(userBirthMonth){
+    case "January":
+      spiritAnimal = "Dire Wolf";
+      break;
+    
+    case "February":
+      spritAnimal = "Polar Bear";
+      break;
+    
+    case "March":
+      spritAnimal = "Lion";
+      break;
+    
+    case "April":
+      spritAnimal = "Gorilla";
+      break;
+      
+    case "May":
+      spritAnimal = "Golden Retriever";
+      break;
+
+    case "June":
+      spritAnimal = "King Cobra";
+      break;
+
+    case "July":
+      spiritAnimal = "Water Buffalo";
+      break;
+      
+    case "August":
+      spritAnimal = "Crocodile";
+      break;
+      
+    case "September":
+      spritAnimal = "Mongoose";
+      break;
+      
+    case "October":
+      spritAnimal = "Ferret";
+      break;
+        
+    case "November":
+      spritAnimal = "Leopard";
+      break;
+  
+    default:
+      spritAnimal = "Falcon";
   }
+  return spiritAnimal;
 }
