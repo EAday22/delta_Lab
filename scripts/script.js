@@ -18,6 +18,12 @@ $(document).ready(function () {
 
     $("#coolNameFactsOutput").html(nameLength(userName));
 
+    $("#coolNameFactsOutput").html(getSpiritAnimal());
+      $("#button").click(function () {
+        let userMonth = $(this).attr("value");
+        alert(getSpiritAnimal(userMonth));
+      });
+
 
     // $("#coolNameFactsOutput").html(
     //   '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1">'
@@ -29,11 +35,6 @@ $(document).ready(function () {
     // );
   });
 
-  $("#userBirthMonth").click(function () {
-    $("#coolNameFactsOutput").html(getSpiritAnimal(userName));
-    let userMonth = $(this).attr("value");
-    alert(getSpiritAnimal(userMonth));
-  });
 
  
 });
@@ -82,51 +83,51 @@ function getSpiritAnimal(userMonth) {
   let spiritAnimal = "nothing";
 
   switch(userMonth){
-    case "January":
+    case "JAN":
       spiritAnimal = "Dire Wolf";
       break;
     
-    case "February":
+    case "FEB":
       spritAnimal = "Polar Bear";
       break;
     
-    case "March":
+    case "MAR":
       spritAnimal = "Lion";
       break;
     
-    case "April":
+    case "APR":
       spritAnimal = "Gorilla";
       break;
       
-    case "May":
+    case "MAY":
       spritAnimal = "Golden Retriever";
       break;
 
-    case "June":
+    case "JUNE":
       spritAnimal = "King Cobra";
       break;
 
-    case "July":
+    case "JULY":
       spiritAnimal = "Water Buffalo";
       break;
       
-    case "August":
+    case "AUG":
       spritAnimal = "Crocodile";
       break;
       
-    case "September":
+    case "SEP":
       spritAnimal = "Mongoose";
       break;
       
-    case "October":
+    case "OCT":
       spritAnimal = "Ferret";
       break;
         
-    case "November":
+    case "NOV":
       spritAnimal = "Leopard";
       break;
   
-    case "December":
+    case "DEC":
       spritAnimal = "Falcon";
   }
   return spiritAnimal;
