@@ -18,11 +18,8 @@ $(document).ready(function () {
 
     $("#coolNameFactsOutput").html(nameLength(userName));
 
-    $("#coolNameFactsOutput").html(getSpiritAnimal());
-      $("#button").click(function () {
-        let userMonth = $(this).attr("value");
-        alert(getSpiritAnimal(userMonth));
-      });
+   // $("#coolNameFactsOutput").html(getSpiritAnimal());
+
 
 
     // $("#coolNameFactsOutput").html(
@@ -35,7 +32,11 @@ $(document).ready(function () {
     // );
   });
 
-
+ $("#monthDiv button").click(function () {
+        let userMonth = $(this).attr("value");
+   
+        alert(getSpiritAnimal(userMonth));
+      });
  
 });
 
@@ -79,6 +80,7 @@ function reverseName(name) {
 }
 
 function getSpiritAnimal(userMonth) {
+  
   //flow control: case switch, loop, if/the
   let spiritAnimal = "nothing";
 
@@ -88,26 +90,26 @@ function getSpiritAnimal(userMonth) {
       break;
     
     case "FEB":
-      spritAnimal = "Polar Bear";
+      spiritAnimal = "Polar Bear";
       break;
     
     case "MAR":
-      spritAnimal = "Lion";
+      spiritAnimal = "Lion";
       break;
     
     case "APR":
-      spritAnimal = "Gorilla";
+      spiritAnimal = "Gorilla";
       break;
       
     case "MAY":
       spritAnimal = "Golden Retriever";
       break;
 
-    case "JUNE":
+    case "JUN":
       spritAnimal = "King Cobra";
       break;
 
-    case "JULY":
+    case "JUL":
       spiritAnimal = "Water Buffalo";
       break;
       
@@ -132,3 +134,4 @@ function getSpiritAnimal(userMonth) {
   }
   return spiritAnimal;
 }
+
