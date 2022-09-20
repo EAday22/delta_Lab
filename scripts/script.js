@@ -18,11 +18,6 @@ $(document).ready(function () {
 
     $("#coolNameFactsOutput").html(nameLength(userName));
 
-    $("#userBirthMonth").click(function () {
-      $("#coolNameFactsOutput").html(getSpiritAnimal(userName));
-      let userMonth = $(this).attr("value");
-      alert(getSpiritAnimal(userMonth));
-    });
 
     // $("#coolNameFactsOutput").html(
     //   '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1">'
@@ -32,6 +27,12 @@ $(document).ready(function () {
     //   "src",
     //   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1"
     // );
+  });
+
+  $("#userBirthMonth").click(function () {
+    $("#coolNameFactsOutput").html(getSpiritAnimal(userName));
+    let userMonth = $(this).attr("value");
+    alert(getSpiritAnimal(userMonth));
   });
 
  
@@ -125,7 +126,7 @@ function getSpiritAnimal(userMonth) {
       spritAnimal = "Leopard";
       break;
   
-    default:
+    case "December":
       spritAnimal = "Falcon";
   }
   return spiritAnimal;
