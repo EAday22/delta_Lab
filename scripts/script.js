@@ -102,11 +102,11 @@ function getSpiritAnimal(userMonth) {
       break;
       
     case "May":
-      spritAnimal = "Golden Retriever";
+      spiritAnimal = "Golden Retriever";
       break;
 
     case "Jun":
-      spritAnimal = "King Cobra";
+      spiritAnimal = "King Cobra";
       break;
 
     case "Jul":
@@ -114,23 +114,23 @@ function getSpiritAnimal(userMonth) {
       break;
       
     case "Aug":
-      spritAnimal = "Crocodile";
+      spiritAnimal = "Crocodile";
       break;
       
     case "Sep":
-      spritAnimal = "Mongoose";
+      spiritAnimal = "Mongoose";
       break;
       
     case "Oct":
-      spritAnimal = "Ferret";
+      spiritAnimal = "Ferret";
       break;
         
     case "Nov":
-      spritAnimal = "Leopard";
+      spiritAnimal = "Leopard";
       break;
   
     case "Dec":
-      spritAnimal = "Falcon";
+      spiritAnimal = "Falcon";
   }
   return spiritAnimal;
 }
