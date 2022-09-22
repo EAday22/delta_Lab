@@ -16,7 +16,7 @@ $(document).ready(function () {
     console.log("you clicked the button");
     //console.log("from ln 12", generateCoolNameFacts(userName));
 
-    $("#coolNameFactsOutput").html(nameLength(userName));
+    $("#coolNameFactsOutput").html(generateCoolNameFacts(userName));
 
    // $("#coolNameFactsOutput").html(getSpiritAnimal());
 
