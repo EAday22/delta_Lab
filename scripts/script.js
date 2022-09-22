@@ -85,51 +85,51 @@ function getSpiritAnimal(userMonth) {
   let spiritAnimal = "nothing";
 
   switch(userMonth){
-    case "JAN":
+    case "Jan":
       spiritAnimal = "Dire Wolf";
       break;
     
-    case "FEB":
+    case "Feb":
       spiritAnimal = "Polar Bear";
       break;
     
-    case "MAR":
+    case "Mar":
       spiritAnimal = "Lion";
       break;
     
-    case "APR":
+    case "Apr":
       spiritAnimal = "Gorilla";
       break;
       
-    case "MAY":
+    case "May":
       spritAnimal = "Golden Retriever";
       break;
 
-    case "JUN":
+    case "Jun":
       spritAnimal = "King Cobra";
       break;
 
-    case "JUL":
+    case "Jul":
       spiritAnimal = "Water Buffalo";
       break;
       
-    case "AUG":
+    case "Aug":
       spritAnimal = "Crocodile";
       break;
       
-    case "SEP":
+    case "Sep":
       spritAnimal = "Mongoose";
       break;
       
-    case "OCT":
+    case "Oct":
       spritAnimal = "Ferret";
       break;
         
-    case "NOV":
+    case "Nov":
       spritAnimal = "Leopard";
       break;
   
-    case "DEC":
+    case "Dec":
       spritAnimal = "Falcon";
   }
   return spiritAnimal;
