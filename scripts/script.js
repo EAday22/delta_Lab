@@ -17,19 +17,6 @@ $(document).ready(function () {
     //console.log("from ln 12", generateCoolNameFacts(userName));
 
     $("#coolNameFactsOutput").html(generateCoolNameFacts(userName));
-
-   // $("#coolNameFactsOutput").html(getSpiritAnimal());
-
-
-
-    // $("#coolNameFactsOutput").html(
-    //   '<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1">'
-    // );
-
-    // $("#coolNameImg").attr(
-    //   "src",
-    //   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Y-YVLipceJt1DMU3Bs8uIAHaFj%26pid%3DApi&f=1"
-    // );
   });
 
  $("#monthDiv button").click(function () {
@@ -45,8 +32,8 @@ function generateCoolNameFacts(userName) {
 
   coolFacts = nameLength(userName);
   coolFacts += " <br> " + nameStart(userName);
-  coolFacts += "<h3> " + nameEnd(userName) + "</h3>";
-  coolFacts += "<h2>" + reverseName(userName) + "</h2>";
+  coolFacts += " <br> " + nameEnd(userName);
+  coolFacts += " <br> " + reverseName(userName);
 
   console.log("initialized the'm coolFacts variable: " + coolFacts);
 
@@ -62,13 +49,13 @@ function nameLength(name) {
 }
 
 function nameStart(name) {
-  return "the first letter of your name is " + name[0];
+  return "The first letter of your name is " + name[0];
 }
 
 function nameEnd(name) {
   let lastIndex = name.length - 1;
 
-  return "the last letter of your name is " + name[lastIndex];
+  return "The last letter of your name is " + name[lastIndex];
 }
 
 function reverseName(name) {
@@ -77,6 +64,7 @@ function reverseName(name) {
   let arrName = name.split();
 
   revName = arrName.reverse();
+  return "Your name reversed is: " + revName;
 }
 
 function getSpiritAnimal(userMonth) {
@@ -134,4 +122,3 @@ function getSpiritAnimal(userMonth) {
   }
   return spiritAnimal;
 }
-
